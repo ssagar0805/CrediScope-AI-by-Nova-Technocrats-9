@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TruthLens Design System - All colors, gradients, fonts, etc defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* TruthLens Brand Colors */
+    --truthlens-primary: 214 71% 70%; /* #667eea */
+    --truthlens-secondary: 255 47% 62%; /* #764ba2 */
+    --truthlens-gradient: linear-gradient(135deg, hsl(214 71% 70%) 0%, hsl(255 47% 62%) 100%);
+    
+    /* Background System */
+    --background: 220 14% 96%; /* #f7f8fc */
+    --foreground: 210 11% 15%; /* #222 */
+    
+    /* Card System */
+    --card: 0 0% 100%; /* white */
+    --card-foreground: 210 11% 15%;
+    --card-shadow: 0 4px 12px hsl(220 14% 80% / 0.15);
+    --card-shadow-hover: 0 8px 25px hsl(220 14% 70% / 0.2);
+    
+    /* Interactive Elements */
+    --primary: 214 71% 70%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 71% 65%;
+    
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 210 11% 15%;
+    
+    /* Muted Colors */
+    --muted: 220 9% 46%; /* #6b7280 */
+    --muted-foreground: 220 9% 46%;
+    
+    /* Accent Colors for Categories */
+    --accent-health: 142 71% 45%; /* Green for health */
+    --accent-political: 213 93% 68%; /* Indigo for politics */
+    --accent-finance: 45 93% 58%; /* Amber for finance */
+    
+    /* Borders and Inputs */
+    --border: 220 13% 91%; /* #e5e7eb */
+    --input: 220 13% 91%;
+    --ring: 214 71% 70%;
+    
+    /* Spacing and Layout */
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode for TruthLens */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --card-shadow: 0 4px 12px hsl(222 47% 5% / 0.3);
+    --card-shadow-hover: 0 8px 25px hsl(222 47% 5% / 0.5);
+    
+    --primary: 214 71% 70%;
+    --primary-foreground: 222 47% 11%;
+    --primary-hover: 214 71% 75%;
+    
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 215 20% 65%;
+    --muted-foreground: 215 20% 65%;
+    
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 214 71% 70%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.6;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}

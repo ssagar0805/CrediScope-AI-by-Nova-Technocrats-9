@@ -1,0 +1,43 @@
+# ======================
+# 🚀 Core Framework
+# ======================
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+python-dotenv==1.0.0
+
+
+# ======================
+# 📦 Google Cloud SDKs
+# ======================
+google-cloud-core==2.3.3
+google-cloud-vision==3.10.2
+google-cloud-translate==3.15.3
+google-cloud-aiplatform==1.38.1
+google-generativeai==0.8.3
+google-api-python-client==2.147.0
+google-auth==2.27.0
+google-auth-oauthlib==1.2.0
+google-cloud-language==2.9.1
+
+
+# ======================
+# 🔐 Security & Safe Browsing
+# ======================
+google-api-core==2.19.0
+requests==2.32.3
+httpx==0.25.2
+
+
+# ======================
+# 🖼️ Image / Data Utils
+# ======================
+pillow==11.0.0
+
+
+# ======================
+# ⚙️ Development / Debug
+# ======================
+pytest==7.4.4
+aiohttp
