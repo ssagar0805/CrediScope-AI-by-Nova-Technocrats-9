@@ -1,11 +1,11 @@
-# TruthLens Backend - FastAPI MVP
+# CrediScope Backend - FastAPI MVP 
 
 ## Overview
-Lightweight FastAPI backend for TruthLens misinformation detection platform. This MVP provides core content verification capabilities with mock AI services for rapid development and React frontend integration.
+Lightweight FastAPI backend for Crediscope misinformation detection platform. This MVP provides core content verification capabilities with mock AI services for rapid development and React frontend integration.
 
 ## Features
 - ✅ Content verification (text, URL, image)
-- ✅ Mock AI analysis with deterministic results  
+- ✅ AI analysis with deterministic results  
 - ✅ JSON-based local storage
 - ✅ CORS configured for React frontend
 - ✅ RESTful API with OpenAPI documentation
