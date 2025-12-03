@@ -226,7 +226,8 @@ python run.py
 
 **Option B: Using Uvicorn directly**
 ```bash
-uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
+uvicorn app.main:app --port 8000 --reload
+
 ```
 
 **Backend will be available at:**
